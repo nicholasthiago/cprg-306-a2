@@ -31,12 +31,15 @@ export default function ItemList ({ data = [] }) {
 		<div className={'item-list-component flex flex-col gap-4 font-normal'}>
 
 			<table className={'table-auto'}>
-				<tr className={'capitalize'}>
-					{ build_Header() }
-				</tr>
+				<tbody>
 
-				{ build_Body() }
+					<tr className={'capitalize'}>
+						{ build_Header() }
+					</tr>
 
+					{ build_Body() }
+
+				</tbody>
 			</table>
 
 		</div>

@@ -27,9 +27,7 @@ export default function Home() {
 
 		let updatedList = [ ...list, newStudent ];
 
-		// updatedList = updatedList.push( newStudent );
-
-		console.log( updatedList );
+		// console.log( updatedList );
 		await setList( updatedList );
 	}
 
@@ -55,7 +53,7 @@ export default function Home() {
 
 				<input className={ inputStyle }
 					type={'date'}
-					onInput={ e => { console.log(e.target.value); setBdate( e.target.value )}}
+					onInput={ e => setBdate( e.target.value )}
 					placeholder={'Date of Birth'} />
 
 				<input className={ inputStyle }

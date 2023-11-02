@@ -13,7 +13,6 @@ export default function ItemList ({ data = [] }) {
 	function build_Body() {
 		return (
 			( data ).map(( student,i ) => {
-				console.log( student );
 				return (
 					<tr key={i}>
 						{
@@ -29,7 +28,7 @@ export default function ItemList ({ data = [] }) {
 
 
 	return (
-		<div className={'item-list-component flex gap-4 font-normal'}>
+		<div className={'item-list-component flex flex-col gap-4 font-normal'}>
 
 			<table className={'table-auto'}>
 				<tr className={'capitalize'}>
